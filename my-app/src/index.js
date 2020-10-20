@@ -4,8 +4,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+function MyApp() {
+  return (
+    <ul>
+      <li>test1</li>
+      <li>test2</li>
+      <li>test3</li>
+    </ul>
+  )
+}
+
 // JSX 
-ReactDOM.render(<div><h1>Hello World</h1><p>This is a paragraph</p></div>, document.getElementById('root')
+ReactDOM.render(
+  <MyApp/>, 
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
