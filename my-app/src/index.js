@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyInfo from './components/MyInfo'
 
 ReactDOM.render(
-  <MyInfo/>, document.getElementById("root")
+  <h1>Hi</h1>,
+  document.getElementById("root")
 )
