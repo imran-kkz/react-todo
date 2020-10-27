@@ -1,9 +1,9 @@
 import React from 'react'
-import Footer from './Footer'
-import MainContent from './MainContent'
 import Navbar from './Navbar'
+import MainContent from './MainContent'
+import Footer from './Footer'
 
-function App() {
+function App (){
     return(
         <div>
         <Navbar/>
@@ -12,5 +12,4 @@ function App() {
         </div>
     )
 }
-
 export default App
