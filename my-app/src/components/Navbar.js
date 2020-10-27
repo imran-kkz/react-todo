@@ -3,7 +3,7 @@ import React from 'react'
 function Navbar() {
   return(
   <div>
-  <h1>Imran</h1>
+  <header className="header-style">This is the header</header>
   </div>
   )
 }
