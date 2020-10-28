@@ -7,9 +7,11 @@ function App (){
     const firstName = "imran"
     const lastName = "kkz"
 
+    const date = new Date()
+
     return(
         <div>
-            <p>{firstName + " " + lastName}</p>
+            <p>it is currently {date.getHours() % 12} o'clock</p>
         <Navbar/>
         <MainContent/>
         <Footer/>
