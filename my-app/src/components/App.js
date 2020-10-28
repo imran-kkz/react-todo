@@ -11,7 +11,7 @@ function App (){
 
     return(
         <div>
-            <p>it is currently {date.getHours() % 12} o'clock</p>
+            <p style={{color: "#FF8C00", backgroundColor: "purple"}}>it is currently {date.getHours() % 12} o'clock</p>
         <Navbar/>
         <MainContent/>
         <Footer/>
