@@ -16,10 +16,12 @@ function App (){
         <MainContent/>
         <Footer/> */}
         <PropsTest 
-            name="Imran Ali"
-            imgUrl="http://placekitten.com/300/200"
-            phone="416-411-4111"
-            email="fakeemail@email.com"/>
+            contact={{
+                name:"Imran Ali",
+                imgUrl:"http://placekitten.com/300/200",
+                phone:"416-411-4111",
+                email:"fakeemail@email.com"}}
+        />
         </div>
     )
 }
