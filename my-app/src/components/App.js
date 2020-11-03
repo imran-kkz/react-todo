@@ -1,27 +1,14 @@
 import React from 'react'
-import Navbar from './Navbar'
-import MainContent from './MainContent'
-import Footer from './Footer'
-import PropsTest from './PropsTest'
+import ToDoItem from './ToDoItem'
+import todoData from './todoData'
+import "./styles.css"
 
 function App (){
-    const firstName = "imran"
-    const lastName = "kkz"
 
-    const date = new Date()
-
+    const todoList = todoData.map(item=> <ToDoItem key={item.id} text={item.text} check={item.completed}/>)
     return(
-        <div>
-        {/* <Navbar/>
-        <MainContent/>
-        <Footer/> */}
-        <PropsTest 
-            contact={{
-                name:"Imran Ali",
-                imgUrl:"http://placekitten.com/300/200",
-                phone:"416-411-4111",
-                email:"fakeemail@email.com"}}
-        />
+        <div className="todo-list">
+            {todoList}
         </div>
     )
 }
