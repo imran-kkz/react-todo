@@ -1,19 +1,20 @@
-import React, {Component} from 'react'
+import React from 'react'
 import ToDoItem from './ToDoItem'
 import todoData from './todoData'
 import "./styles.css"
 
-class App extends Component {
+class App extends React.Component {
 constructor() {
     super()
-    this.state = todoData.map(item=> <ToDoItem key={item.id} text={item.text} check={item.completed}/>)
+    this.state = {
+        todos: todoData
+    }
 }
 render(){
-    // const todoList = todoData.map(item=> <ToDoItem key={item.id} text={item.text} check={item.completed}/>)
+    const todoItems = this.state.todos.map(item => <ToDoItem key={item.id} item={item} />)
     return(
         <div className="todo-list">
-            {this.state}
-            {/* {todoList} */}
+            {todoItems}
         </div>
         )
     }
